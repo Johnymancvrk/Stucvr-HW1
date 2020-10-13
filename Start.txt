@@ -2,12 +2,21 @@ def Start():
     name = input("Tell me your name please: ")
     print("Hi", name)
     print("Welcome to the --Data Processing in Python-- course")
-    try:
-        Grade_expectation = int(input("Tell me which grade do you think you will obtain (1-5): "))
-    except ValueError or Grade_expectation > 5:
-        while True:
-            Grade_expectation = int(input("Please, insert an integer from 1 up to 5: "))
-    if type(Grade_expectation) == int and Grade_expectation < 6:
+    Grade_expectation = int(input("Tell me which grade do you think you will obtain (1-5): "))
+    if Grade_expectation < 6:
+        if Grade_expectation < 2:
+            print("Oh, you are never gonna get that.") 
+        elif Grade_expectation < 3:
+            print("Please, be serious.")
+        elif Grade_expectation < 4:
+            print("You are close to the true value.")
+        elif Grade_expectation < 5:
+            print("Unfortunately, you shall not pass.")
+        else:
+            print("You appear to be very good at guessing but apparently that's the only thing you are good at.")
+    else:
+        while Grade_expectation > 5:
+             Grade_expectation = int(input("The value must be an integer from 1 to 5!: "))
         if Grade_expectation < 2:
             print("Oh, you are never gonna get that.") 
         elif Grade_expectation < 3:
