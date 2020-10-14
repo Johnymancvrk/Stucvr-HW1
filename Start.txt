@@ -27,3 +27,43 @@ def Start():
             print("Unfortunately, you shall not pass.")
         else:
             print("You appear to be very good at guessing but apparently that's the only thing you are good at.")
+
+
+
+# Something completely different
+
+# essential beginning
+print("Hello world")
+
+# data generating
+import numpy as np
+x = np.random.normal(0, 1, 100)
+y = x + np.random.normal(1, 2, 100)
+
+# plot construction
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.scatter(x, y, color = "red")
+ax.set_xlabel("x")
+ax.set_ylabel("y")
+
+# we look at our plot
+plt.show()
+
+
+
+
+
+import numpy as np
+a = [1, 2, 3, 4]
+print(np.mean(a))
+
+import matplotlib.pyplot as plt
+import pandas as pd
+df = pd.read_csv("C:/Users/Honza Stuchlík/Documents/IES/Data Processing in Python/Stucvr-HW1/df.csv", encoding="utf-8")
+print(df)
+fig, ax = plt.subplots()
+ax.scatter(df["x"], df["y"], color = "red")
+ax.set_xlabel("x")
+ax.set_ylabel("y")
+plt.show()
