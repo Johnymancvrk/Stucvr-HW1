@@ -1,3 +1,5 @@
+## First code
+
 def Start():
     name = input("Tell me your name please: ")
     print("Hi", name)
@@ -29,6 +31,10 @@ def Start():
             print("You appear to be very good at guessing but apparently that's the only thing you are good at.")
 
 
+
+ 
+        
+## Second code
 
 # Something completely different
 
@@ -67,3 +73,21 @@ ax.scatter(df["x"], df["y"], color = "red")
 ax.set_xlabel("x")
 ax.set_ylabel("y")
 plt.show()
+
+
+## Third code
+
+def Python_random_generator(Nu):
+    x = np.random.normal(0, 1,100)
+    for count,i in enumerate(x,1):
+        if count <= Nu:
+            print(i)
+    print("")
+    mean = sum(x[:Nu])/Nu
+    print(f"Mean: {mean}")
+    print("")
+    median = np.median((x[:Nu]))
+    print(f"Median: {median}")
+    print("")      
+    sd = np.std(x[:Nu])
+    print(f"Standard deviation: {sd}")
